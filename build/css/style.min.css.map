@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/content.scss","style.scss"],"names":[],"mappings":"AAAA,M,CACE,iB,CACA,wB,CCAF,I,CACI,uB","file":"style.min.css","sourcesContent":[".title {\n  text-align: center;\n  text-transform: uppercase;\n}","@import \"blocks/content.scss\";\n\nbody {\n    background-color: tomato;\n}"]}
