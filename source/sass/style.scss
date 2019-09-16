@@ -1,5 +1,6 @@
-@import "blocks/content.scss";
-
-body {
-    background-color: tomato;
-}
+@import "blocks/content";
+@import "variables";
+@import "mixins";
+@import "scaffolding";
+@import "blocks/ui/title";
+@import "blocks/ui/button";

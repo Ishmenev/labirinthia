@@ -1,2 +1,2 @@
-.title{text-align:center;text-transform:uppercase}body{background-color:tomato}
+body{min-width:320px;margin:0}@media (min-width:1040px){body{width:auto}.container{width:1040px}}.row--list{list-style:none;margin:0;padding:0}.title{text-align:center;font-family:"Neucha","Arial",sans-serif;color:#fcd97b}.button{color:#343533;text-decoration:none;text-transform:uppercase;padding:14px 30px 12px;background-color:#b1f879}.button--levels{background-color:#e4c372}
 /*# sourceMappingURL=style.min.css.map */
