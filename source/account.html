@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>Личный кабинет</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light main-menu">
+      <a class="navbar-brand" href="./index.html">labirinthia.ru</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./play.html">Играть</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Создать уровень</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./account.html">Кабинет<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <div>
+          <a href="#" class="main-meny__login">Александр Д.</a>
+        </div>
+      </div>
+    </nav>
+    <div class="intro">
+      <div class="container">
+        <div class="title intro__title">
+          <h1>Кабинет</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="data">
+      <div class="container">
+        <div class="title data__title">
+          <h2>Данные пользователя</h2>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="img/user-photo.jpg" width="200" height="200" alt="Фото пользователя">
+          </div>
+          <div class="col-12 col-md-8">
+            <ul class="data__list">
+              <li class="data__item">Имя: Александр</li>
+              <li class="data__item">Социальная сеть: Вконтакте</li>
+              <li class="data__item">Пройдено уровней: 15</li>
+              <li class="data__item">Создано уровней: 2</li>            
+            </ul>
+            <a class="button logout__data" href="#">Выйти</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="heroes">
+      <div class="container">
+        <div class="title">
+          <h2>Персонаж</h2>
+        </div>
+        <p class="heroes__description">Вы можете сменить внешний вид вашего персонажа. Сделайте его красивым!</p>
+        <ul class="heroes__list">
+          <li class="heroes__item">
+            <a href="" class="heroes__option">
+              <img src="img/hero-back.png" class="heroes__image" width="196" height="205" alt="Изображение персонажа">
+            </a>
+          </li>
+          <li class="heroes__item">
+            <a href="" class="heroes__option">
+              <img src="img/hero-back.png" class="heroes__image" width="196" height="205" alt="Изображение персонажа">
+            </a>
+          </li>
+          <li class="heroes__item">
+            <a href="" class="heroes__option">
+              <img src="img/hero-wizard.jpg" class="heroes__image" width="196" height="205" alt="Изображение персонажа">
+            </a>
+          </li>
+          <li class="heroes__item">
+            <a href="" class="heroes__option">
+              <img src="img/hero-warrior.jpg" class="heroes__image" width="196" height="205" alt="Изображение персонажа">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="achievements">
+      <div class="container">
+        <div class="title">
+          <h2>Достижения</h2>
+        </div>
+        <p class="achievement__description">Кликните по замочку чтобы узнать как открыть новые достижения!</p>
+        <ul class="achievement__list">
+          <li class="achievements__item">
+            <a href="" class="acievements__option">
+              <img src="img/freshmen.png" class="achievements__image" width="196" height="205" alt="Изображение персонажа">
+            </a>
+          </li>
+          <li class="achievements__item">
+            <a href="" class="acievements__option">
+              <img src="img/freshmen.png" class="achievements__image" width="196" height="205" alt="Изображение персонажа">
+            </a>
+          </li>
+          <li class="achievements__item">
+            <a href="" class="acievements__option">
+              <img src="img/freshmen.png" class="achievements__image" width="196" height="205" alt="Изображение персонажа">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="authors">
+      <span>Created by Egor Dyachenko & Evgeny Ishmenev</span>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
