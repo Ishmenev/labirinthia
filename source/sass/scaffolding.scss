@@ -1,6 +1,13 @@
+html {
+  height: 100%;
+}
+
 body {
   min-width: 320px;
   margin: 0;
+  display: flex;
+	flex-direction: column;
+	height: 100%;
   font-family: $baseFont;
   font-size: 18px;
   line-height: 24px;
@@ -14,15 +21,33 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  min-height: 150px;    
+  min-height: 150px;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .options {
   display: none;
 }
 
+.game {
+  display: none;
+}
+
+.indicators {
+  display: none;
+}
+
+.objects {
+  display: none;
+}
+
 footer {
+  flex-grow: 0;
   background-color: $back;
+  width: 100%;
   min-height: 100px;
   color: $white;
 }
@@ -45,6 +70,26 @@ a:hover {
   
   .options {
     display: block;
+  }
+
+  .game {
+    display: block;
+  }
+
+  .indicators {
+    display: block;
+  }
+  
+  .objects {
+    display: block;
+  }
+
+  .cover {
+    display: block;
+  }
+
+  .alert {
+    display: none;
   }
 }
 
