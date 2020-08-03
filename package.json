@@ -1,47 +1,31 @@
 {
-  "name": "Labarinthia",
-  "version": "17.0.0",
-  "private": true,
-  "description": "Проект «Лабиринтия»",
-  "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.5.x",
-    "browser-sync": "2.26.x",
-    "del": "^5.0.0",
-    "gulp": "4.0.x",
-    "gulp-csso": "^3.0.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^6.0.0",
-    "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.4.0",
-    "gulp-sourcemaps": "2.6.x",
-    "gulp-svgstore": "^7.0.1",
-    "gulp-webp": "^4.0.1",
-    "posthtml-include": "^1.2.0"
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "12.16.2",
+    "npm": "6.9.0"
   },
   "scripts": {
-    "build": "gulp build",
-    "start": "gulp start"
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client &&  npm run build --prefix client"
   },
-  "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ],
-  "editorconfig-cli": [
-    "*.json",
-    "*.js",
-    "source/*.html",
-    "source/js/**/*.js",
-    "source/img/**/*.svg",
-    "source/less/**/*.less"
-  ],
-  "engines": {
-    "node": "8.16"
-  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "gulp-sass": "^4.0.2"
+    "concurrently": "^5.2.0",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10",
+    "nodemon": "^2.0.3",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-vkontakte": "^0.3.2"
   }
 }
